@@ -1,0 +1,357 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HSC 2024 Result Countdown</title>
+    
+    <!-- Open Graph Meta Tags -->
+    <meta property="og:title" content="HSC 2024 Result Countdown" />
+    <meta property="og:description" content="Stay tuned for the result on October 15, 2024, 11:00 AM." />
+    <meta property="og:image" content="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEik2VDEZ9zL3y0NyzMSvlW_pb3t-S4x8gzKzafZu7cGXXErADoy2HOnsrX9cJ-xpEBtpofKYsB1GwkqlylJSSSEFG8oyYM3lbYBbHKHzxRBEdsNtDKPvoWWByYwZuPinvlMkANhdfpOSs74uONG76OhgyJZGBUb-LM7ZsWMKRf3c6G1bQNkKOrKa8zpDHTA/s1600/d225ebaa-7172-4be4-aded-05e683940b18.webp" />
+    <meta property="og:url" content="https://itzmahin06.github.io/HSC-24-Result-Countdown" />
+    <meta property="og:type" content="website" />
+
+    <!-- Twitter Card Meta Tags -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="HSC 2024 Result Countdown" />
+    <meta name="twitter:description" content="Stay tuned for the result on October 15, 2024, 11:00 AM." />
+    <meta name="twitter:image" content="https://yourwebsite.com/path-to-image/A_modern_and_clean_Open_Graph_image_design_for_the.png" />
+
+
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            
+            margin: 0;
+            background-color: #f0f8ff;
+            flex-direction: column;
+        }
+
+        h1 {
+            font-size: 2rem;
+            color: #333;
+            text-align: center;
+            margin: 0;
+        }
+
+        .countdown {
+            display: flex;
+            justify-content: center;
+            gap: 10px;
+            flex-wrap: wrap;
+            margin-top: 20px;
+            max-width: 100%;
+        }
+
+        .countdown div {
+            background: #008080;
+            border-radius: 10px;
+            padding: 15px;
+            color: #fff;
+            text-align: center;
+            flex: 1 1 80px; /* Makes each countdown box take equal space */
+            min-width: 60px;
+            margin: 5px;
+            box-sizing: border-box;
+            font-size: 1rem;
+            animation: fadeIn 2s ease-in-out;
+        }
+
+        .countdown div span {
+            display: block;
+            font-size: 2rem;
+            margin-bottom: 5px;
+            animation: pulse 1s infinite;
+        }
+
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        @keyframes pulse {
+            0%, 100% {
+                transform: scale(1);
+            }
+            50% {
+                transform: scale(1.1);
+            }
+        }
+
+        .description {
+            margin-top: 20px;
+            font-size: 1rem;
+            color: #555;
+            text-align: center;
+            padding: 0 20px;
+        }
+
+        footer {
+            margin-top: 20px;
+            font-size: 0.9rem;
+            color: #aaa;
+            text-align: center;
+        }
+
+        /* Responsive styles */
+        @media (max-width: 600px) {
+            h1 {
+                font-size: 1.5rem;
+            }
+
+            .countdown div {
+                padding: 10px;
+                font-size: 0.9rem;
+            }
+
+            .countdown div span {
+                font-size: 1.5rem;
+            }
+
+            .description {
+                font-size: 0.9rem;
+            }
+
+            footer {
+                font-size: 0.8rem;
+            }
+        }
+
+        .share-btn {
+            padding: 15px 30px;
+            border-radius: 5px;
+            background-color: #008080;
+            color: white;
+            text-decoration: none;
+            font-size: 0.7rem;
+            transition: background 0.3s ease;
+        }
+
+        .share-btn:hover {
+            background-color: #007070;
+        }
+
+        
+
+.link-box {
+    background-color: #ffffff;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    max-width: 350px;
+    text-align: center;
+}
+
+.link-box h2 {
+    font-size: 24px;
+    color: #333;
+    margin-bottom: 20px;
+    border-bottom: 2px solid #007BFF;
+    padding-bottom: 10px;
+}
+
+.link-box ul {
+    list-style: none;
+}
+
+.link-box ul li {
+    margin: 10px 0;
+}
+
+.link-box ul li a {
+    display: block;
+    text-decoration: none;
+    color: #007BFF;
+    font-size: 18px;
+    border: 2px solid #007BFF;
+    border-radius: 5px;
+    padding: 10px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.link-box ul li a:hover {
+    background-color: #007BFF;
+    color: #ffffff;
+}
+
+  
+
+
+.result-box {
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  width: 90%;
+  max-width: 600px;
+  padding: 20px;
+  text-align: justify;
+}
+
+h2 {
+  font-size: 1.5rem;
+  color: #4a90e2;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+p {
+  font-size: 1.1rem;
+  line-height: 1.8;
+  color: #333;
+}
+
+strong {
+  color: #e74c3c;
+}
+
+@media (max-width: 768px) {
+  .result-box {
+    padding: 15px;
+  }
+
+  h2 {
+    font-size: 1.3rem;
+  }
+
+  p {
+    font-size: 1rem;
+  }
+}
+
+        
+    </style>
+</head>
+<body>
+
+    <h1>HSC 2024 Result Countdown</h1>
+    <div class="countdown">
+        <div>
+            <span id="days"></span>
+            Days
+        </div>
+        <div>
+            <span id="hours"></span>
+            Hours
+        </div>
+        <div>
+            <span id="minutes"></span>
+            Minutes
+        </div>
+        <div>
+            <span id="seconds"></span>
+            Seconds
+        </div>
+    </div>
+
+    <div class="description">
+        The countdown is ticking for the much-awaited HSC 2024 results! Stay tuned for the announcement on 15 October 2024, 11:00 AM.
+    </div>
+<br>
+    <div class="link-box">
+        <h2>All Result Links</h2>
+        <ul>
+            <li><a href="http://www.educationboardresults.gov.bd/" target="_blank">Education Board Results</a></li>
+            <li><a href="https://eboardresults.com/en/ebr.app/home/" target="_blank">eBoard Results</a></li>
+            <li><a href="https://eduboardresults.gov.bd" target="_blank">Edu Board Results</a></li>
+            <li><a href="https://www.mymensingheducationboard.gov.bd/resultmbh24/" target="_blank">Only Mymensingh Board Result</a></li>
+        </ul>
+    </div>
+    <br> 
+    <div class="result-box">
+    <h2>এসএমএস এর মাধ্যমে রেজাল্ট দেখুন</h2>
+    <p>
+      শিক্ষার্থীরা অনলাইনে বা মুঠোফোনে এসএমএসের মাধ্যমে তাদের ফলাফল জানতে পারবেন। মুঠোফোনের মেসেজ অপশনে গিয়ে <strong>HSC</strong> লিখে স্পেস দিয়ে বোর্ডের নামের প্রথম ৩ অক্ষর লিখে স্পেস দিয়ে রোল নম্বর লিখে আবার স্পেস দিয়ে পাসের বছর লিখে পাঠাতে হবে <strong>১৬২২২</strong> নম্বরে।
+    </p>
+    <p>
+      <strong>উদাহরণ:</strong> HSC DHA 123456 2024 লিখে পাঠাতে হবে ১৬২২২ নম্বরে। ফিরতি এসএমএসে জানা যাবে পরীক্ষার ফলাফল।
+    </p>
+        <p> ©Mahmudul Islam Mahin </p>
+  </div>
+<br>
+    <div style="text-align: center;">
+        <h2>Education Board Results</h2>
+        <iframe src="https://eduboardresults.gov.bd" 
+                width="100%" 
+                height="600px" 
+                style="border: 2px solid #007BFF; border-radius: 10px;">
+        </iframe>
+    </div>
+    <br> 
+<h1> Latest Notice by Admission News & Result</h1>
+  <img src="file/notice1.png" width="350" height="500"> 
+    <br> 
+<button class="share-btn" id="share-button">Share This Page</button>
+  <br> <br>
+    
+    <br> 
+    <footer>
+        &copy; 2024 itzMahin. All rights reserved.
+    </footer>
+
+    <script>
+        // Set the date we're counting down to
+        var countDownDate = new Date("Oct 15, 2024 11:00:00").getTime();
+
+        // Update the countdown every 1 second
+        var countdownfunction = setInterval(function() {
+
+            // Get today's date and time
+            var now = new Date().getTime();
+
+            // Find the time remaining
+            var timeleft = countDownDate - now;
+
+            // Time calculations for days, hours, minutes, and seconds
+            var days = Math.floor(timeleft / (1000 * 60 * 60 * 24));
+            var hours = Math.floor((timeleft % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+            var minutes = Math.floor((timeleft % (1000 * 60 * 60)) / (1000 * 60));
+            var seconds = Math.floor((timeleft % (1000 * 60)) / 1000);
+
+            // Output the result in the elements with respective ids
+            document.getElementById("days").innerHTML = days;
+            document.getElementById("hours").innerHTML = hours;
+            document.getElementById("minutes").innerHTML = minutes;
+            document.getElementById("seconds").innerHTML = seconds;
+
+            // If the countdown is finished, display some text
+            if (timeleft < 0) {
+                clearInterval(countdownfunction);
+                document.querySelector(".countdown").innerHTML = "HSC 2024 Results are out!";
+            }
+        }, 1000);
+    </script>
+<script>
+        const shareUrl = "https://itzmahin06.github.io/hsc24-result";
+        const shareTitle = "HSC 2024 Result Countdown";
+        const shareText = "Check out the HSC 2024 Result Countdown! Stay tuned for the result on October 15, 2024, 11:00 AM.";
+
+        document.getElementById('share-button').addEventListener('click', async () => {
+            if (navigator.share) {
+                try {
+                    await navigator.share({
+                        title: shareTitle,
+                        text: shareText,
+                        url: shareUrl
+                    });
+                    console.log('Shared successfully!');
+                } catch (error) {
+                    console.error('Error sharing:', error);
+                }
+            } else {
+                // Fallback for browsers that do not support the Web Share API
+                alert("Sharing not supported in this browser. You can copy the link: " + shareUrl);
+            }
+            });
+    </script> 
+</body>
+</html>
